@@ -21,12 +21,16 @@
 //---------------------------------------------------------------------------------------
 // INCLUDES
 //---------------------------------------------------------------------------------------
-#include "stdafx.h"
+// Use this if compilation happens in Visual Studio 
+// #include "stdafx.h"
 #include "mainHeader.h"
+
+#define MAX_PATH 4096
 
 //---------------------------------------------------------------------------------------
 // FUNCTION
 //---------------------------------------------------------------------------------------
+#ifndef Compile
 string ebdName()
 {
 	// Variables Definition
@@ -81,3 +85,4 @@ string ebdName()
 
 	return name;
 }
+#endif

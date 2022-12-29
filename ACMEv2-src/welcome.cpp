@@ -21,7 +21,8 @@
 //---------------------------------------------------------------------------------------
 // INCLUDES
 //---------------------------------------------------------------------------------------
-#include "stdafx.h"
+// Use this if compilation happens in Visual Studio 
+// #include "stdafx.h"
 #include "mainHeader.h"
 
 //---------------------------------------------------------------------------------------
@@ -39,6 +40,9 @@ vector<int> welcome()
 	cout << "/**" << "                -  A C M E  -                   " << "**/" << endl;
 	cout << "/**" << "                                                " << "**/" << endl;
 	cout << "/**" << " usage : EBD file must be in the .exe directory " << "**/" << endl;
+	#ifdef Linux
+	cout << "/**" << " usage(Linux) : add the name as an argument     " << "**/" << endl;
+	#endif
 	cout << "/**" << "                                                " << "**/" << endl;
 	cout << "/**" << "   - Supported devices:                         " << "**/" << endl;
 	cout << "/**" << "      (1) KCU105 :    X [50,357] - Y [0,309]    " << "**/" << endl;
